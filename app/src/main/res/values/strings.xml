@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MultipleBackStacksApp</string>
+
+    <string name="next">Next</string>
+    <string name="back">Back</string>
+
+    <string name="screenName">Tab %1$d. Screen %2$d</string>
+</resources>

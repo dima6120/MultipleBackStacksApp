@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/tab1_nav_graph"
+    app:startDestination="@id/tab1Screen1Fragment">
+
+    <fragment
+        android:id="@+id/tab1Screen2Fragment"
+        android:name="com.example.multiplebackstacksapp.fragments.mainScreen.tabs.tab1.Tab1Screen2Fragment"
+        android:label="Tab1Screen2Fragment" >
+        <action
+            android:id="@+id/toScreen3"
+            app:destination="@id/tab1Screen3Fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/tab1Screen1Fragment"
+        android:name="com.example.multiplebackstacksapp.fragments.mainScreen.tabs.tab1.Tab1Screen1Fragment"
+        android:label="Tab1Screen1Fragment">
+        <action
+            android:id="@+id/toScreen2"
+            app:destination="@id/tab1Screen2Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/tab1Screen3Fragment"
+        android:name="com.example.multiplebackstacksapp.fragments.mainScreen.tabs.tab1.Tab1Screen3Fragment"
+        android:label="Tab1Screen3Fragment" />
+
+</navigation>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/tab2_nav_graph"
+    app:startDestination="@id/tab2Screen1Fragment">
+
+    <fragment
+        android:id="@+id/tab2Screen1Fragment"
+        android:name="com.example.multiplebackstacksapp.fragments.mainScreen.tabs.tab2.Tab2Screen1Fragment"
+        android:label="Tab2Screen1Fragment">
+        <action
+            android:id="@+id/toScreen2"
+            app:destination="@id/tab2Screen2Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/tab2Screen2Fragment"
+        android:name="com.example.multiplebackstacksapp.fragments.mainScreen.tabs.tab2.Tab2Screen2Fragment"
+        android:label="Tab2Screen2Fragment" >
+        <action
+            android:id="@+id/toScreen3"
+            app:destination="@id/tab2Screen3Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/tab2Screen3Fragment"
+        android:name="com.example.multiplebackstacksapp.fragments.mainScreen.tabs.tab2.Tab2Screen3Fragment"
+        android:label="Tab2Screen3Fragment" />
+
+</navigation>

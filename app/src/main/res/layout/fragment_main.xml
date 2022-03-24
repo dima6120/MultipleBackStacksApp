@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/mainScreenNavHostFragment"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:id="@+id/bottomNavBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bottomNavBarHeight"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/tab1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Tab 1"
+            android:layout_weight="1"
+            android:backgroundTint="@color/tab_background_selector"
+            android:background="@android:color/white"
+            />
+
+        <Button
+            android:id="@+id/tab2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Tab 2"
+            android:layout_weight="1"
+            android:layout_marginStart="@dimen/bottomNavBarTabSpace"
+            android:backgroundTint="@color/tab_background_selector"
+            android:background="@android:color/white"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
